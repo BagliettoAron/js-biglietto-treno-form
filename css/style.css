@@ -1,4 +1,5 @@
 html{
+    /* TEST */
     background-color: aquamarine;
 }
 
@@ -12,21 +13,19 @@ html{
     --ms_shadow-black: rgba(0, 0, 0, 0.397);
     --ms_txt-output-section: black;
     --ms_output-border: #808080;
+    --ms_passenger-bg-color: #808080;
 }
 
 /* MAIN */
 
 /* main section */
 /* coomon */
-.ms_main-section .row{
-    width: 90%;
-    margin: 0 auto;
-}
 
 .ms_main-section {
     width: 80%;
     margin: 0 auto;
-    background-color: var(--ms_bg-red) 
+    background-color: var(--ms_bg-red);
+    padding-bottom: 3rem;
 }
 
 .ms_main-section .container h2{
@@ -42,6 +41,7 @@ html{
     font-size: 1.2rem;
     border-radius: .5rem;
     box-shadow:3px 3px 3px 4px var(--ms_shadow-black);
+    height: auto;
     
 }
 
@@ -51,21 +51,20 @@ html{
 }
 
 /* button */
-.ms_input-section button{
-
-}
 
 /* output section */
 .ms_output-section{
     color:var(--ms_txt-output-section);
 }
 
-.ms_output-section h3{
-text-transform: uppercase;
-}
-
 .ms_output-section .row{
     border-top: 1px solid var(--ms_output-border);
     border-bottom: 1px solid var(--ms_output-border);
 }
+
+.ms_output-section .col-4{
+    background-color:var(--ms_passenger-bg-color);
+}
+
+
 
