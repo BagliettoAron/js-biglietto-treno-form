@@ -1,0 +1,71 @@
+html{
+    background-color: aquamarine;
+}
+
+/* COMMON */
+:root{
+    --ms_bg-red:#b6144f;
+    --ms_txt-white: white;
+    --ms_txt-red: #bd2159;
+    --ms_input-box-red :#bd2159;
+    --ms_bg-white: white;
+    --ms_shadow-black: rgba(0, 0, 0, 0.397);
+    --ms_txt-output-section: black;
+    --ms_output-border: #808080;
+}
+
+/* MAIN */
+
+/* main section */
+/* coomon */
+.ms_main-section .row{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.ms_main-section {
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--ms_bg-red) 
+}
+
+.ms_main-section .container h2{
+    color:var(--ms_txt-white);
+    text-transform: uppercase;
+   
+}
+
+.ms_main-section .white-cont-wrap{
+    background-color:var(--ms_bg-white);
+    color: var(--ms_txt-red);
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    box-shadow:3px 3px 3px 4px var(--ms_shadow-black);
+    
+}
+
+.ms_main-section input{
+    border-color: var(--ms_input-box-red);
+    border-radius: .5rem;
+}
+
+/* button */
+.ms_input-section button{
+
+}
+
+/* output section */
+.ms_output-section{
+    color:var(--ms_txt-output-section);
+}
+
+.ms_output-section h3{
+text-transform: uppercase;
+}
+
+.ms_output-section .row{
+    border-top: 1px solid var(--ms_output-border);
+    border-bottom: 1px solid var(--ms_output-border);
+}
+
