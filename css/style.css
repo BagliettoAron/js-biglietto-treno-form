@@ -16,11 +16,14 @@ html{
     --ms_passenger-bg-color: #808080;
 }
 
+label{
+    display: block;
+}
+
 /* MAIN */
 
 /* main section */
 /* coomon */
-
 .ms_main-section {
     width: 80%;
     margin: 0 auto;
@@ -45,9 +48,15 @@ html{
     
 }
 
-.ms_main-section input{
-    border-color: var(--ms_input-box-red);
+.ms_main-section input,
+.ms_main-section select{
+    border: 1px solid var(--ms_input-box-red);
     border-radius: .5rem;
+}
+
+.ms_main-section select{
+    background-color: var(--ms_input-box-red);
+    color: var(--ms_txt-white);
 }
 
 /* button */

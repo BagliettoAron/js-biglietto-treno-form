@@ -30,24 +30,29 @@
                     <div class="row justify-content-space-evenly">
                         <div class="col 3 pt-3">
                             <!-- user name form-->
-                            <label for="user-name">Nome Cognome</label>
-                            <div class="">
+                            <div class="form-item">
+                                <label for="user-name">Nome Cognome</label>
                                 <input type="text" name="user-name"  class="mt-3 mb-5" id="user-name">
                             </div>
                         </div>
                         <!-- route distance form -->
                         <div class="col 3 pt-3">
-                            <label for="route-distance">Km da percorrere</label>
-                            <div class="">
+                            <div class="form-item">
+                                <label for="route-distance">Km da percorrere</label>
                                 <input type="text" name="route-distance"  class="mt-3 mb-5" id="route-distance">
                             </div>
                         </div>
                         <!-- ager range form -->
                         <div class="col 3 pt-3">
-                            <label for="age-range">Fascia d'età</label>
-                                <div class="">
-                                    <input type="text" name="age-range"  class="mt-3 mb-5" id="age-range">
-                                </div>
+                            <div class="form-item">
+                                <label for="age-range">Fascia d'età</label>
+                                <select name="age-range" class="mt-3 md-5" id="age-range">
+                                    <option value=""></option>
+                                    <option id="under18" value="under18">Minorenne</option>
+                                    <option value="over18">Maggiorenne</option>
+                                    <option id="over65" value="over65">Over65</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <!-- button section -->
@@ -77,7 +82,8 @@
                             <div class="row my-2">
                                 <!-- passenger name -->
                                 <div class="col-4 p-4">
-                                    <div class="ms_passenger-name text-uppercase"> Nome del passeggero</div>
+                                    <div class="text-uppercase"> Nome del passeggero</div>
+                                    <div class="ms_passenger-name"> Aron</div>
                                 </div>
                                 <!-- discount -->
                                 <div class="col-2 p-4">
