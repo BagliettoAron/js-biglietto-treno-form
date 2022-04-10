@@ -23,17 +23,18 @@ function(){
     console.log(routePrice)
     
     let ageRange = document.getElementById("age-range");
+    let valueAgeRange = ageRange.value;
     console.log(ageRange)
 
-    const under18 = document.getElementById("under18");
+    const under18 = document.getElementById("under18").value;
 
-    const over65 = document.getElementById("over65");
+    const over65 = document.getElementById("over65").value;
 
     let discount = 0;
     
-     if (ageRange = under18) {
+     if (valueAgeRange === under18) {
         discount = routePrice * 0.2;
-    } else if (ageRange = over65) {
+    } else if (valueAgeRange === over65) {
         discount = routePrice * 0.4;
     }
     console.log(discount)
