@@ -3,7 +3,6 @@
 
 
 
-// const ageRange = document.getElementById ("age-range").value
 
 // mostro la sezione del biglietto con i risultati dei dati di imput
 
@@ -38,6 +37,9 @@ function(){
         discount = routePrice * 0.4;
     }
     console.log(discount)
+
+    const finalPrice = routePrice - discount;
+    console.log(finalPrice)
         
     // const ticketClassUnder18 = "Minorenni"
     // const ticketClassOver65 = "Silver"
@@ -61,6 +63,9 @@ function(){
 
     let ticketClassResponse = document.querySelector (".ms_discount")
     ticketClassResponse.innerHTML = `${ticketClass}`
+
+    let ticketPriceResponse = document.querySelector(".ms_ticket-price")
+    ticketPriceResponse.innerHTML = `€ ${finalPrice}`
 
 
 
