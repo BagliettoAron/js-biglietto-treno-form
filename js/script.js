@@ -39,14 +39,43 @@ function(){
     }
     console.log(discount)
         
+    // const ticketClassUnder18 = "Minorenni"
+    // const ticketClassOver65 = "Silver"
 
-
+    let ticketClass = "Standard";
+    
+     if (valueAgeRange === under18) {
+        ticketClass = "Minorenni";
+    } else if (valueAgeRange === over65) {
+        ticketClass = "Silver";
+    } 
+    console.log(ticketClass)
 
     // visualizzo la pagina di output
     const outputSection = document.querySelector(".ms_output-section")
     console.log(outputSection)
     outputSection.classList.remove("d-none");
+
+    const ticketNameResponse = document.querySelector (".ms_passenger-name");
+    ticketNameResponse.innerHTML = `${userName}`;
+
+    let ticketClassResponse = document.querySelector (".ms_discount")
+    ticketClassResponse.innerHTML = `${ticketClass}`
+
+
+
+
+
+
+
+
+
+
+
     }
+
+    
+
 
 );
 
